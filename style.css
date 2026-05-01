@@ -1,0 +1,105 @@
+/* 変数定義（色をここ一括で変えられます） */
+:root {
+    --bg-color: #2c5fad;
+    --card-bg: #161b22;
+    --text-main: #bdbdbd;
+    --text-sub: #8b949e;
+    --accent-color: #afabab;
+    --alert-color: #03a200;
+    --border-color: #30363d;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 40px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #3fb950;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #3fb950;
+}
+
+h1 { font-size: 2rem; margin: 0; letter-spacing: 2px; }
+
+/* カードスタイル */
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.card.alert {
+    border-left: 4px solid var(--alert-color);
+}
+
+h2 {
+    font-size: 1rem; /* 項目名の文字サイズ */
+    color: var(--accent-color);
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.date-range {
+    font-size: 1.5rem; /* 日付の文字サイズ */
+    font-weight: bold;
+    color: var(--alert-color);
+    margin: 10px 0;
+}
+
+.info-list {
+    padding-left: 18px;
+    margin: 0;
+}
+
+.info-list li {
+    margin-bottom: 12px;
+    font-size: 0.9rem; /* お知らせの文字サイズ */
+}
+
+/* SNSリンクエリア（非表示時は影響なし） */
+.sns-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.sns-item {
+    color: var(--text-main);
+    font-size: 1.5rem;
+    transition: color 0.2s;
+}
+
+.sns-item:hover { color: var(--accent-color); }
+
+/* フッター */
+footer {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 0.9rem;
+    color: var(--text-sub);
+}
